@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 💼 Devendra Reddy Keesara — Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A personal portfolio website built with **React** and **JavaScript**, showcasing my projects, skills and experience as a Graduate Software & Embedded Engineer based in Liverpool, UK.
 
-## Available Scripts
+🌐 **Live:** [devendrareddy.netlify.app](https://devendrareddy.netlify.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This portfolio was built to present my work and experience to UK employers. It includes:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- A clean, animated hero section with a typewriter effect
+- An about section highlighting my background
+- A projects showcase with live demo and GitHub links
+- A skills section with animated progress bars
+- A working contact form
+- Fully responsive design for all screen sizes
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Built With
 
-### `npm run build`
+| Technology | Purpose |
+|------------|---------|
+| React | Frontend framework |
+| JavaScript (ES6+) | Core language |
+| CSS | Styling and animations |
+| React Hooks | useState, useEffect, useRef |
+| Netlify | Deployment and hosting |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Projects Featured
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🏥 NHS vs Private Healthcare Decision Engine
+> Python · Flask · REST API · Render.com
 
-### `npm run eject`
+A live web application helping UK residents make informed decisions between NHS and private healthcare.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 🌐 Live: [nhs-vs-private.onrender.com](https://nhs-vs-private.onrender.com)
+- 💻 Repo: [github.com/deva1611/nhs-vs-private](https://github.com/deva1611/nhs-vs-private)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🔐 Face Recognition Security System
+> C++17 · OpenCV 4.6 · Python · CMake · Linux
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Real-time face recognition system running on Linux with live video feed, unit-tested OOP codebase and professional Git workflow.
 
-## Learn More
+- 💻 Repo: [github.com/deva1611/face-recognition-security](https://github.com/deva1611/face-recognition-security)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Project Structure
 
-### Code Splitting
+```
+my-portfolio/
+├── public/
+│   └── index.html
+├── src/
+│   └── App.js        # Main portfolio component
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🏃 Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+# Clone the repository
+git clone https://github.com/deva1611/my-portfolio.git
 
-### Making a Progressive Web App
+# Navigate into the project
+cd my-portfolio
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Install dependencies
+npm install
 
-### Advanced Configuration
+# Start the development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Opens at `http://localhost:3000`
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📦 Build for Production
 
-### `npm run build` fails to minify
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 👤 About Me
+
+**Devendra Reddy Keesara**
+MSc Embedded Systems & IC Design — Liverpool John Moores University
+
+- 📍 Liverpool, UK — Available immediately
+- 📧 kdevendra8187@gmail.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/devendrareddy-keesara-a55912254)
+- 🐙 [GitHub](https://github.com/deva1611)
+
+---
+
+## 📄 Licence
+
+This project is open source and available under the [MIT Licence](LICENSE).
