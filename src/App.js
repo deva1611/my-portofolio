@@ -1,3 +1,5 @@
+import emailjs from '@emailjs/browser';
+
 import { useState, useEffect, useRef } from "react";
 
 const NAV_LINKS = ["Home", "About", "Projects", "Skills", "Contact"];
@@ -9,7 +11,7 @@ const PROJECTS = [
     description: "A live web application built with Python and Flask helping UK residents make informed healthcare decisions. Deployed and used by real users.",
     tech: ["Python", "Flask", "HTML", "CSS"],
     emoji: "🏥",
-    color: "#00ff88",
+    color: "#00ff88"
     live: "https://nhs-vs-private.onrender.com",
     link: "https://github.com/deva1611/nhs-vs-private"
   },
@@ -266,13 +268,24 @@ function Skills() {
 function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sent, setSent] = useState(false);
-  const handleSubmit = () => {
-    if (form.name && form.email && form.message) {
-      setSent(true);
-      setTimeout(() => setSent(false), 4000);
-      setForm({ name: "", email: "", message: "" });
-    }
-  };
+  const handleSubmit = (e) => {
+  e.preventDefault();
+  emailjs.send(
+    'service_6g3wiyi',
+    'template_n4agjie',
+    {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    },
+    '-Fvr7RBR6_S0f4C0m'
+  ).then(() => {
+    alert('Message sent successfully!');
+    setFormData({ name: '', email: '', message: '' });
+  }).catch(() => {
+    alert('Something went wrong. Please try again.');
+  });
+};
   const inputStyle = { width: "100%", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "0.5rem", padding: "0.9rem 1rem", color: "#fff", fontSize: "0.95rem", fontFamily: "Georgia, serif", outline: "none", transition: "border-color 0.2s", boxSizing: "border-box" };
 
   return (
@@ -301,7 +314,7 @@ function Footer() {
       <span>Devendra Reddy Keesara — Built with React ⚛️</span>
       <div style={{ display: "flex", gap: "1.5rem" }}>
         <a href="https://github.com/deva1611" target="_blank" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }} onMouseEnter={e => e.target.style.color = "#00ff88"} onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.4)"}>GitHub</a>
-        <a href="https://www.linkedin.com/in/devendrareddy-keesara-a55912254" target="_blank" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }} onMouseEnter={e => e.target.style.color = "#00c8ff"} onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.4)"}>LinkedIn</a>
+        <a href="https://www.linkedin.com/in/devendra-reddy-keesara-a55912254" target="_blank" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }} onMouseEnter={e => e.target.style.color = "#00c8ff"} onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.4)"}>LinkedIn</a>
         <a href="mailto:kdevendra8187@gmail.com" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }} onMouseEnter={e => e.target.style.color = "#ff6b6b"} onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.4)"}>Email</a>
       </div>
     </footer>
