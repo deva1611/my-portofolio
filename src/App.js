@@ -149,7 +149,7 @@ function Hero() {
             onMouseLeave={e => { e.target.style.transform = "translateY(0)"; e.target.style.boxShadow = "none"; }}>
             View My Work →
           </a>
-          <a href="https://www.linkedin.com/in/devendrareddy-keesara-a55912254" target="_blank" style={{ padding: "0.9rem 2.2rem", background: "transparent", color: "#fff", borderRadius: "0.5rem", textDecoration: "none", fontWeight: "600", fontFamily: "'Courier New', monospace", fontSize: "0.9rem", letterSpacing: "1px", border: "1px solid rgba(255,255,255,0.2)" }}
+          <a href="https://www.linkedin.com/in/devendra-reddy-keesara-a55912254" target="_blank" style={{ padding: "0.9rem 2.2rem", background: "transparent", color: "#fff", borderRadius: "0.5rem", textDecoration: "none", fontWeight: "600", fontFamily: "'Courier New', monospace", fontSize: "0.9rem", letterSpacing: "1px", border: "1px solid rgba(255,255,255,0.2)" }}
             onMouseEnter={e => { e.target.style.borderColor = "#00c8ff"; e.target.style.transform = "translateY(-2px)"; }}
             onMouseLeave={e => { e.target.style.borderColor = "rgba(255,255,255,0.2)"; e.target.style.transform = "translateY(0)"; }}>LinkedIn</a>
           <a href="https://github.com/deva1611" target="_blank" style={{ padding: "0.9rem 2.2rem", background: "transparent", color: "#fff", borderRadius: "0.5rem", textDecoration: "none", fontWeight: "600", fontFamily: "'Courier New', monospace", fontSize: "0.9rem", letterSpacing: "1px", border: "1px solid rgba(255,255,255,0.2)" }}
